@@ -24,6 +24,12 @@ export class Knot {
         this.init();
     }
 
+    resize(width, height) {
+        this.camera.aspect = width / height;
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(width, height);
+    }
+
     init() {
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(45, this.width / this.height, 0.1, 1000);
