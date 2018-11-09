@@ -7,14 +7,6 @@ module.exports = {
   output: {
     filename: 'bundle.js'
   },
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"]
-  },
-  module: {
-    rules: [
-      { test: /\.tsx?$/, loader: ["ts-loader"] }
-    ]
-  },
   devServer: {
     open: true,
     contentBase: path.join(__dirname, 'public'),
