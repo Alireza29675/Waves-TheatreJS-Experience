@@ -1,11 +1,32 @@
+*::selection {
+    background: #000;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background: #222;
 }
+
+#app > .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#app > .intro > h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+
+}
+
 canvas {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
 }
